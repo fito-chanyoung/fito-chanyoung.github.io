@@ -22,18 +22,18 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: "zpxkffjrm@gmail.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "rohanchandra/type-theme"
+  github: "zpxlffjrm"
   gitter:
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin:  "www.linkedin.com/in/chanyoung-song-a116811b8"
   pinterest:
   reddit:
   soundcloud:
@@ -48,7 +48,7 @@ theme_settings:
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
-  search: false # Enable the search feature
+  search: true # Enable the search feature
 
   # Localization strings
   str_follow_on: "Follow on"
@@ -70,7 +70,7 @@ theme_settings:
   post_navigation: false
 
 # PAGINATION
-paginate: 5
+paginate: 10
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
