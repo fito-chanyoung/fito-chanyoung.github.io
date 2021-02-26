@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "기록저장용 볼트"
+title                    : "zpxlffjrm의 기록보관용 볼트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chanyoung Song"
-description              : "기록이 필요할때 기록해두는 볼트입니다."
-url                      : "https://zpxlffjrm.github.io"
-baseurl                  : "/"
-repository               : "zpxlffjrm/minimal-mistakes"
+description              : "기록할것을 보관하는 보관용 볼트입니다"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "zpxlffjrm/zpxlffjrm.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -96,8 +96,8 @@ analytics:
 author:
   name             : "Chanyoung Song"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Software Engineer"
-  location         : "Seoul, Korea"
+  bio              : "Software engineer"
+  location         : "Seoul"
   email            : "zpxkffjrm@gmail.com"
   links:
     - label: "Email"
