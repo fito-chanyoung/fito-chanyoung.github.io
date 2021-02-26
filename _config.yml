@@ -14,7 +14,7 @@ theme_settings:
   # Header and footer text
   header_text: >
      <p>일상에서 기록하고자 하는 모든것을 적는 블로그입니다</p>
-
+     <img src='./assets/img/computer' />
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
