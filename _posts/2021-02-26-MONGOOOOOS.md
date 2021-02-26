@@ -1,10 +1,12 @@
 ---
+title: "MongoDB 시험해보기"
+
 categories:
   - Mongo
-title: "MongoDB 시험해보기"
-last_modified_at: 2020-02-26T00:00:00+00:00
 tags: 
-  - mongos, certificate
+  - mongos
+  - certificate
+last_modified_at: 2020-02-26T00:00:00+00:00
 ---
 
 ## 몽고디비 시험을 봅시다!
