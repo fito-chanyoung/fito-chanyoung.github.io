@@ -5,7 +5,7 @@ url: "https://zpxlffjrm.github.io/"
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: "zpxlffjrm의 기록 보관 볼트"
+  title: zpxlffjrm의 기록 보관 볼트
   avatar: assets/img/avatar.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
