@@ -1,9 +1,9 @@
 ---
-title: "certificate"
-permalink: /tags/certificate/
+title: "develop"
+permalink: /tags/develop/
 layout: tag
 author_profile: true
-taxonomy: certificate
+taxonomy: develop
 ---
 
-certificate(자격증)관련 페이지들을 모아놓은 페이지 입니다.
+develop(웹개발)관련 페이지들을 모아놓은 페이지 입니다.
