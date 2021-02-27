@@ -1,6 +1,5 @@
 ---
 title: "MongoDB 시험해보기"
-comments: true
 
 categories:
   - Mongo
