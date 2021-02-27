@@ -1,7 +1,7 @@
 ---
 title: "Posts by Tag"
 permalink: /tags/
-layout: archivetaxonomy
+layout: archive
 ---
 
 {{ content }}
