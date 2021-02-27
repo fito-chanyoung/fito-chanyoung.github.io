@@ -5,7 +5,6 @@ permalink: /categories/
 author_profile: true
 ---
 
-
 {{ content }}
 
 {% assign categories_max = 0 %}
