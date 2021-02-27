@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "블로그 메인 페이지"
-    url: https://zpxlffjrm.github.io/
   - title: "About"
     url: /about/
   - title: "Category"
     url: /categories/
+  - title: "Main"
+    url: https://zpxlffjrm.github.io/
   # - title: "Sitemap"
   #   url: /sitemap/
