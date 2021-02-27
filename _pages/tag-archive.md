@@ -1,7 +1,7 @@
 ---
 title: "Posts by Tag"
 permalink: /tags/index.html
-layout: tags
+layout: archive-taxonomy
 author_profile: true
 ---
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
