@@ -1,6 +1,6 @@
 ---
 title: "웹개발(노드)"
-permalink: /categories/#node/
+permalink: /categories/node/
 layout: category
 author_profile: true
 taxonomy: Web(node)
