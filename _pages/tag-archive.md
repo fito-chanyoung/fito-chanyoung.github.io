@@ -1,9 +1,9 @@
 ---
 title: "Posts by Tag"
-permalink: /tags/index.html
-layout: archive-taxonomy
-author_profile: true
+layout: default
+author_profile: false
 ---
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -28,3 +28,4 @@ author_profile: true
     {% endfor %}
   </div>
 </div>
+
