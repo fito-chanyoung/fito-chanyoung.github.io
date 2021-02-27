@@ -247,9 +247,8 @@ category_archive:
 tag_archive:
   type: jekyll-archives
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
- jekyll-archives:
-   enabled: 
+jekyll-archives:
+  enabled:
     - categories
     - tags
   layouts:
