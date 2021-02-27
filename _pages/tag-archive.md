@@ -1,6 +1,6 @@
 ---
 title: "Posts by Tag"
-layout: archive-taxonomy
+layout: tags
 permalink: /tags/
-author_profile: false
+author_profile: true
 ---
