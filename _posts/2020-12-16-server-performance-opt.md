@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 
 categories:
-  - web(node)
+  - node
 tags: 
   - server
   - optimize
