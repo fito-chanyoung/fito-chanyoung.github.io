@@ -4,3 +4,9 @@ permalink: /tags/index.html
 layout: tags
 author_profile: true
 ---
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include posts-tag.html taxonomy=page.taxonomy type=entries_layout %}
+</div>
