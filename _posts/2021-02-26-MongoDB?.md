@@ -1,5 +1,7 @@
 ---
 title: "MongoDB 시험해보기"
+toc: true
+toc_sticky: true
 
 categories:
   - Mongo
