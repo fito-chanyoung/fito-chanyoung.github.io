@@ -1,6 +1,6 @@
 ---
 title: "Mongo"
-permalink: /categories/mongo/
+permalink: /categories/#mongo/
 layout: category
 author_profile: true
 taxonomy: Mongo
