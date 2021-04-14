@@ -126,7 +126,7 @@ $ mongorestore --drop -u "m103-admin" --authenticationDatabase "admin" dump/
 ### export & import
 
 덤프파일, 리스토어가 BSON 포맷으로 데이터를 내보내고 다시 가져왔다면
-export, import는 json 포맷으로 데이터를 조작한다.
+export, import는 json 포맷 혹은 CSV 포맷으로 데이터를 조작한다.
 
 하지만 다른 차이점도 존재하는데, **export는 명시하지 않는다면 디렉터리를 생성하지 않는다. 대신 stdout으로 내보낸다.**
 따라서 어떤 디렉터리, 파일에 데이터를 작성해야 할지 명시해야 한다.
