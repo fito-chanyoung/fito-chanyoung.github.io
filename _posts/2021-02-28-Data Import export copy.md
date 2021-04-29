@@ -5,11 +5,12 @@ toc_sticky: true
 
 categories:
   - Mongo
-tags: 
+tags:
   - mongos
   - certificate
-last_modified_at: 2020-02-28T14:51:00+00:00
+last_modified_at: 2021-02-28T14:51:00+00:00
 ---
+
 아틀라스는 다른 환경(운영체제)에서 데이터 임포트/익스포트를 보장한다.
 그전에 포맷을 정해야 한다.
 
@@ -23,12 +24,15 @@ last_modified_at: 2020-02-28T14:51:00+00:00
 ```
 monodb+srv://user:password@clusterURI.mongodb.net/database
 ```
+
 저기서 유저, 비밀번호, 클러스터 URI, 입출력하고자 하는 데이터베이스 정보만 바꾸면 된다.
 
 ## JSON
 
 ### mongoimport
+
 기본적인 사용법
+
 ```bash
 mongoimport --uri "<atlas cluster URI>"
             --drop "<file name>"
@@ -36,23 +40,29 @@ mongoimport --uri "<atlas cluster URI>"
 ```
 
 ### mongoexport
+
 기본적인 사용법
+
 ```bash
 mongoexport --uri "<atlas cluster URI>"
             --colection=<collection name>
             --out=<filename>.json
 ```
 
-
 ## BSON
 
 ### mongorestore
+
 기본적인 사용법 drop 옵션으로 해당 콜렉션을 제거한 다음 파일들을 올린다.(에러 방지용)
+
 ```bash
 mongoimport --uri "<atlas cluster URI>" --drop "<collection name>"
 ```
+
 ### mongodump
+
 기본적인 사용법
+
 ```bash
 mongodump --uri "<atlas cluster URI>"
 ```
