@@ -6,5 +6,7 @@ main:
     url: /categories/
   - title: "Main"
     url: https://zpxlffjrm.github.io/
+  - title: "포트폴리오"
+    url: /portfolio/
   # - title: "Sitemap"
   #   url: /sitemap/
