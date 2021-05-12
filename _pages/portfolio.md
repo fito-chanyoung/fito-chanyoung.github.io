@@ -32,8 +32,8 @@ Your tube는 유튜브(Youtube)의 좋아요 목록을 조회하고 관리할 �
 
 동영상, 동영상 설명 부분을 클릭하면 특정 동영상을 시청할 수 있으며, x 버튼을 통해 좋아요 목록에서 제거할 수 있습니다.
 
-![Yourtube-list](/assets/images/yourtube-list.gif)
-![Yourtube-delete](/assets/images/yourtube-delete.gif)
+![Yourtube-list](/assets/images/yourutbe-list.gif)
+![Yourtube-delete](/assets/images/yourutbe-delete.gif)
 
 3. 다크모드
    해당페이지는 자체적인 다크모드를 지원합니다.
