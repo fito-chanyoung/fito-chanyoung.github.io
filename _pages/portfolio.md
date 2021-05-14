@@ -24,7 +24,7 @@ Your tube는 유튜브(Youtube)의 좋아요 목록을 조회하고 관리할 �
    기존에 작성한 반응형 웹을 SASS를 이용하여 다시금 재구성 하였습니다.
    중구난방으로 흩어져있던 브레이크 포인트를 SASS를 이용해 하나의 파일에서 관리하게 제작하였습니다.
 
-   ![image](/assets/images/yourtube-responsive)
+   ![image](/assets/images/yourtube-responsive.gif)
 
 2. 유튜브 좋아요 리스트
    유튜브 좋아요 리스트를 불러옵니다.
@@ -32,20 +32,20 @@ Your tube는 유튜브(Youtube)의 좋아요 목록을 조회하고 관리할 �
 
    동영상, 동영상 설명 부분을 클릭하면 특정 동영상을 시청할 수 있으며, x 버튼을 통해 좋아요 목록에서 제거할 수 있습니다.
 
-   ![image](/assets/images/yourtube-list)
-   ![image](/assets/images/yourtube-delete)
+   ![Yourtube-list](/assets/images/yourutbe-list.gif)
+   ![Yourtube-delete](/assets/images/yourutbe-delete.gif)
 
 3. 다크모드
    해당페이지는 자체적인 다크모드를 지원합니다.
 
-   ![image](/assets/images/yourtube-dark-reactive)
+   ![Yourtube-dark-reactive](/assets/images/yourtube-dark-reactive.gif)
 
 4. 동영상 조회
    키워드를 입력하면 본인의 유튜브 좋아요 리스트들중 제목과 설명에서 해당 키워드를 가지고 있는것들에 대해 리스트를 보여줍니다.
 
-   ![image](/assets/images/yourtube-search)
+   ![Yourtube-search](/assets/images/yourtube-search.gif)
 
 5. 로그아웃
    세팅 모달창의 로그아웃 버튼을 클릭하면 로그아웃을 할 수 있습니다.
 
-   ![image](/assets/images/yourtube-logout)
+   ![Yourtube-logout](/assets/images/yourtube-logout.gif)
