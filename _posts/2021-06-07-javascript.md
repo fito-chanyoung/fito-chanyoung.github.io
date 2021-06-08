@@ -139,6 +139,27 @@ func 이라는 변수에 저장하고 실행한 것이다.
 
 이런 특징을 이용하여 자바스크립트의 class에서 캡슐화된 private 변수를 만들어낼수 있다.
 
+또한 아래와 같은 코드도 클로져를 통해 가능하다.
+
+```js
+var greetCurried = function (greeting) {
+  return function (name) {
+    console.log(greeting + ", " + name);
+  };
+};
+
+var greetHello = greetCurried("Hello");
+greetHello("Heidi"); //"Hello, Heidi"
+greetHello("Eddie"); //"Hello, Eddie"
+
+// 출처 : https://www.sitepoint.com/currying-in-functional-javascript/
+```
+
+위와 같은 방식을 커링이라고 한다.
+
+커링은 클로져를 여러 개의 인자를 가진 함수를 호출 할 경우,
+파라미터의 수보다 적은 수의 파라미터를 인자로 받으면 누락된 파라미터를 인자로 받는 함수를 제작하는 방법이다.
+
 ## ES6
 
 앞서 언급하지는 않았지만 자바스크립트는 ECMAscript의 표준 사항을 가장 잘 구현한 언어라고
