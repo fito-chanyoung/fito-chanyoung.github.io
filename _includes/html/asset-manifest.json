@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7cc8bab2.css",
+    "main.js": "/static/js/main.3651e8c5.js",
+    "static/media/profile.jpg": "/static/media/profile.c9a9cdfd2a8d1afab1df.jpg",
+    "static/media/elastic.png": "/static/media/elastic.86b867fe606c0179a598.png",
+    "static/media/aws.png": "/static/media/aws.58aa21333d7b9155e47f.png",
+    "static/media/firebase.svg": "/static/media/firebase.7840999a174fe3a49655ad334b6202b1.svg",
+    "static/media/sass.png": "/static/media/sass.6747d5c68a381e29fc69.png",
+    "static/media/react-query.svg": "/static/media/react-query.30df1fcdd8e7dab0fdea2d151c745b26.svg",
+    "static/media/flutter.svg": "/static/media/flutter.4fd5520fe28ebf839174a6604e02bc39.svg",
+    "static/media/expressjs.svg": "/static/media/expressjs.493a0dd08d8d77a341e2d22676607a29.svg",
+    "static/media/recoil.dark.svg": "/static/media/recoil.dark.ace55a4eacc935910e90668e2efead9d.svg",
+    "static/media/angular.svg": "/static/media/angular.0a9bb2bb6ac763bf07a6553f732d6ef8.svg",
+    "static/media/Figma-logo.svg": "/static/media/Figma-logo.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
+    "static/media/MongoDB.svg": "/static/media/MongoDB.114c881a2c5ed4fa71e070e55aba4883.svg",
+    "index.html": "/index.html",
+    "static/media/vue.svg": "/static/media/vue.f1fd23be1db9361fbcd81511fe862b08.svg",
+    "static/media/React-icon.svg": "/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.7cc8bab2.css.map": "/static/css/main.7cc8bab2.css.map",
+    "main.3651e8c5.js.map": "/static/js/main.3651e8c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cc8bab2.css",
+    "static/js/main.3651e8c5.js"
+  ]
+}

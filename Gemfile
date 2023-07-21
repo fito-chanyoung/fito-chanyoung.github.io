@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-
 gem "github-pages", group: :jekyll_plugins
+gem 'nokogiri', '~> 1.13', '>= 1.13.10'
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
@@ -16,5 +16,8 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-commonmark-ghpages"
 end
 
+
+gem "webrick", "~> 1.8"
