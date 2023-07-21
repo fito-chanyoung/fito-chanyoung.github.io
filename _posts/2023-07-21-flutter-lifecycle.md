@@ -1,5 +1,5 @@
 ---
-title: "flutter - 웹뷰"
+title: "flutter - stateless & sateful 위젯"
 toc: true
 toc_sticky: true
 
@@ -53,10 +53,11 @@ state 클래스는 stateless 위젯과 비슷하게 ui를 구성하는 코드를
 
 왜 이런 구조를 가지고 있는가 문서를 살펴보면
 
-> > 성능 때문이다. 플러터에서는 필요할때마다 위젯을 폐기하고 재구성하는데, 이는 그렇게 부담을 주지 않는 작업이다.
-> > 하지만 상태(state)를 위젯처럼 필요할때마다 재구성한다면, 연산능력이 매우 많이 필요하다.
-> > 또한 state를 오랫동안유지한다면, 매 프레임마다 state 객체에 접근이 가능하며, 이는 플러터에서 애니메이션이 존재할 수 있는 이유 이다.
-> > [원문](https://flutterbyexample.com/lesson/stateful-widget-lifecycle)
+> 성능 때문이다. 플러터에서는 필요할때마다 위젯을 폐기하고 재구성하는데, 이는 그렇게 부담을 주지 않는 작업이다.
+> 하지만 상태(state)를 위젯처럼 필요할때마다 재구성한다면, 연산능력이 매우 많이 필요하다.
+>  또한 state를 오랫동안유지한다면, 매 프레임마다 state 객체에 접근이 가능하며, 이는 플러터에서 애니메이션이 존재할 수 있는 이유 이다.
+> 
+> [원문](https://flutterbyexample.com/lesson/stateful-widget-lifecycle)
 
 그렇기에 위젯과 상태 클래스가 분화 되어 있다.
 즉 상태가 변경되면 위젯 인스턴스는 다시 만들어 지고,
