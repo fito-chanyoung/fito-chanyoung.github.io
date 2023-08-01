@@ -7,7 +7,8 @@ tags:
   - dart
   - flutter
 
-last_modified_at: 2023-07-31T16:40:00+00:00
+date: 2023-07-31
+last_modified_at: 2023-08-01T14:03:00+00:00
 ---
 
 # 안내사항
@@ -50,7 +51,85 @@ children을 넘겨주는 방식 외 2가지 방식이 존재한다.
 - ListView.builder
   반드시 위젯을 리턴해야 하는 itemBuilder(required BuildContext context, required int index) 함수를 반드시 필요로 한다.
   또한 itemCount로 itemBuilder 함수를 몇번 실행할지?(아님 위젯을 그릴지?) 결정할 수도 있다.
+  렌더링 되는 위젯은 스크롤이 이동하면서 위젯이 그려져야 할 순간에 렌더링 된다.
 
 - ListView.separated
-  위 builder itemBuilder 함수를 받는것은 동일하다. 하지만 itemBuilder가 렌더링 하는 위젯 사이사이에 Divider와 같은 위젯을 렌더링 해야 하는 메서드이므로, itemBuilder와 같은 파라미터를 필요로 하는 separatorBuilder함수를 반드시 필요로 하며, 몇개의 위젯을 그려하 하는지 결정하는 itemCount 파라미터
+  위 builder itemBuilder 함수를 받는것은 동일하다. 하지만 separatorBuilder함수가 렌더링 하는 위젯 사이사이에 Divider와 같은 위젯을 렌더링 해야 하는 메서드이므로, itemBuilder와 같은 파라미터를 필요로 하는 separatorBuilder함수를 반드시 필요로 하며, 몇개의 위젯을 그려하 하는지 결정하는 itemCount 파라미터
   총 3개의 파라미터가 필수 파라미터이다.
+
+  ListView.builder와 마찬가지로 렌더링 되는 위젯은 스크롤이 이동하면서 위젯이 그려져야 할 순간에 렌더링 된다.
+
+  중간중간 배너를 넣어야 할때 유용할듯 하다.
+
+## SingleChildeScrollView 위젯
+
+하나의 child 위젯을 받아서 스크롤이 가능하다면 스크롤이 가능한 위젯이다.
+그뜻은 child의 길이가 화면을 넘어서지 않는다면 스크롤 에니메이션이 작동하지 않는다는 뜻이다.
+
+리스트뷰와 다르게 모든 **하위 위젯을 한번에 렌더링** 된다는 점에서 차이가 있다.
+성능저하가 발생할 수도 있다는 뜻.
+
+### parameter: physics
+
+만약 화면을 넘어서지 않아도 스크롤 에니메이션이 작동하길 원한다면, physics 파라미터에 AlwaysScrollableScrollPhysics()를 넘겨주면 된다.
+
+만약 스크롤을 막길 원한다면
+NeverScrollableScrollPhysics()를 넘겨주면 된다.
+
+만약 IOS의 스크롤 에니메이션을 원한다면
+BouncingScrollPhysics()를 넘겨주면 된다.
+
+만약 안드로이드의 스크롤 에니메이션을 원한다면
+ClampingScrollPhysics()를 넘겨주면 된다. (완전히 같지는 않다.)
+
+### parameter: clipBehavior
+
+- none: 스크롤 영역을 벗어나도 그대로 보여준다.
+- hardEdge: 스크롤 영역을 벗어나면 잘라낸다.
+- antiAlias: 스크롤 영역을 벗어나면 잘라낸다. 하지만 잘라낸 부분을 부드럽게 처리한다.
+- antiAliasWithSaveLayer: antiAlias와 비슷하다. 하지만 레이어를 저장하고 처리한다.
+
+hardEdge 에서 antiAliasWithSaveLayer 까지 갈수록 이미지가 부드러워 지지만, 처리하는데 드는 비용이 늘어난다.
+즉 성능이 떨어진다.
+
+## GridView 위젯
+
+위젯배치를 한방향이 아닌 두방향으로 하는게 가능하게 해주는 위젯이다.
+
+### .count 생성자
+
+위젯을 메인, 크로스 축으로 몇개씩 배치할지 정해줄 수 있다.
+crossAxisCount: 크로스 축으로 몇개씩 배치할지 정해준다.
+mainAxisCount: 메인 축으로 몇개씩 배치할지 정해준다.
+children: 렌더링할 위젯 리스트.
+
+화면에 보이지 않더라도 children내의 모든 위젯을 렌더링 한다.
+
+위젯간 간격을 주려면
+crossAxisSpacing: 크로스 축 간격
+mainAxisSpacing: 메인 축 간격
+위 파라미터를 사용하자.
+
+### .builder 생성자
+
+화면에 렌더링 되는 위젯만 렌더링해야 할때, 퍼포먼스가 중요할때 사용하자.
+
+gridDelegate: 그리드 내부 타일의 레이아웃을 제어한다. 즉 이 위젯의 렌더링 방법을 정의한다.
+itemBuilder: 위젯을 렌더링하는 함수 context와 index를 파라미터로 받는다.
+
+## ReorderableListView 위젯
+
+children: 위젯 리스트
+**위젯 리스트는 key프로퍼티가 필수**
+
+### parameter: onReorder
+
+위젯을 재배치할때 호출되는 함수. 이전 인덱스 번호와 새로운 위치의 인덱스를 파라미터로 받는다. 주의할점은 **oldIndex, newIndex 모두 이동이 되기 전에 산정된다.**
+
+### .builder 생성자
+
+itemBuilder: 위젯을 렌더링하는 함수 context와 index를 파라미터로 받는다.
+
+다른 builder 생성자들과 마찬가지로 렌더링이 필요할때만 렌더링한다.
+
+이때 파라미터 index는 위젯의 인덱스가 아닌, 위젯 리스트의 인덱스이다.
