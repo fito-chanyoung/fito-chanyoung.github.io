@@ -133,3 +133,103 @@ itemBuilder: 위젯을 렌더링하는 함수 context와 index를 파라미터�
 다른 builder 생성자들과 마찬가지로 렌더링이 필요할때만 렌더링한다.
 
 이때 파라미터 index는 위젯의 인덱스가 아닌, 위젯 리스트의 인덱스이다.
+
+## CustomScrollView 위젯
+
+2개이상의 ScrollView 위젯을 동시에 적용하거나 할때 사용한다.
+
+SliverAppBar와 조합하면 스크롤을 올렸을때 앱바가 사라지는 효과를 줄 수 있다.
+
+### parameter: slivers
+
+리스트 형태의 위젯을 받는다. SliverList, SliverGrid, SliverAppBar 등이 있다.
+
+Sliver 위젯들만 내부에 들어갈 수 있다.
+
+## SliverList 위젯
+
+### parameter: delegate
+
+ListView 생성자와 비슷하다.
+
+SliverChildListDelegate: 위젯 리스트를 받는다.
+SliverChildBuilderDelegate: 위젯을 렌더링하는 함수 context와 index를 파라미터로 받는다. 다른 builder들과 마찬가지로 위젯 렌더링이 필요할때만 렌더링한다.
+
+## SliverGrid 위젯
+
+delegate: SliverList의 delegate와 같음.
+gridDelegate: GridView의 gridDelegate와 같음. 다만 Sliver 키워드가 붙어있어야 한다.
+
+## SliverAppBar 위젯
+
+### parameter: floating
+
+default: false
+위로 스크롤 하는 동안 앱바가 내려오는 효과를 주려면 true 값을 준다.
+
+### parameter: pinned
+
+default: false
+true 값을 주면 스크롤을 내려도 앱바가 사라지지 않는다.
+
+### parameter: snap
+
+default: false
+
+floating이 true일때만 동작한다.
+스크롤을 내리다가 손을 떼면, 스크롤이 앱바를 완전히 내려놓거나, 다시 올려놓는다.
+
+### parameter: stretch
+
+default: false
+true 값을 주면 맨위에서 스크롤을 내리면 앱바가 커지는 효과를 준다.
+== 남는 공간을 채우는 효과를 준다.
+
+### parameter: expandedHeight
+
+앱바의 최대 높이를 정해준다.
+
+### parameter: collapsedHeight
+
+앱바가 밀려 들어가는 높이를 정해준다.
+
+### parameter: flexibleSpace
+
+FlexibleSpaceBar 위젯을 받는다.
+앱바에 텍스트를 넣거나, 이미지를 넣거나 할때 사용한다.
+
+앱바의 전체 높이를 차지한다.
+
+## SliverPersistentHeader 위젯
+
+sliver 사이에 레이블, 제목 등 헤더를 넣을때 사용한다.
+
+### parameter: delegate
+
+직접 SliverPersistentHeaderDelegate를 확장한 클래스를 제작해서 사용해야 한다.
+
+## SliverPersistentHeaderDelegate 클래스
+
+build, maxExtent, minExtent, shouldRebuild를 오버라이딩 해야 한다.
+
+### build (BuildContext context, double shrinkOffset, bool overlapContent)
+
+헤더를 어떻게 만들것인지 정의해야 하기 때문에 위젯을 리턴해야 한다.
+
+### maxExtent
+
+위젯의 최대 높이
+
+### minExtent
+
+위젯의 최소 높이
+
+### shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate)
+
+위젯이 재생성 되어야 하는지를 정의한다.
+build가 실행되었을때의 이전 delegate를 파라미터로 받는다.
+this로 현재 delegate에 접근이 가능.
+
+# 다른 Sliver 위젯들
+
+[공식 문서](https://api.flutter.dev/flutter/widgets/CustomScrollView/slivers.html) 참고
