@@ -233,3 +233,17 @@ this로 현재 delegate에 접근이 가능.
 # 다른 Sliver 위젯들
 
 [공식 문서](https://api.flutter.dev/flutter/widgets/CustomScrollView/slivers.html) 참고
+
+## Scrollbar 위젯
+
+웹페이에서 기본적으로 제공? 되는 스크롤바를 사용하기 위해서는 Scrollbar 위젯을 사용해야 한다.
+스크롤이 필요한 위젯을 Scrollbar 위젯으로 감싸주면 된다.
+
+## RefreshIndicator 위젯
+
+스크롤을 아래로 내리면 새로고침이 되는 효과를 주고 싶을때 사용한다.
+child 위젯외 아래 파라미터를 받는다.
+
+### parameter: onRefresh
+
+refresh를 실행할 함수를 정의한다. 이 함수가 끝날때까지 refresh indicator가 뜬다.
